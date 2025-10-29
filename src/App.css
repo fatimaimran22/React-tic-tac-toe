@@ -1,0 +1,67 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.square {
+  background-color:white;
+  border: grey solid 2px;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 0px;
+  width: 60px;
+  height: 60px;
+  text-align: center;  /*Without this, only centers text horizontally, and vertical centering wouldn’t work properly.*/
+  font-weight: bold;
+  font-size:xx-large;
+  cursor: pointer;
+
+  display: flex;
+  align-items:center ; /*centers it vertically*/
+  justify-content: center; /*centers it horizontally*/
+}
+
+.boardRow{
+  display: flex;
+}
+
+.game {
+  display: flex;               
+  justify-content: center;    
+  align-items: flex-start;     
+  gap: 40px;                   
+  margin-top: 40px;
+  height: 100vh;  
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.game-info ol {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.game-info button {
+  margin-bottom: 8px;
+  padding: 6px 10px;
+  border: 1px solid #888;
+  background: #f9f9f9;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.game-info button:hover {
+  background: #ddd;
+}
